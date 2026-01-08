@@ -25,11 +25,32 @@ nav {
   z-index: 1000;
 }
 
+/* LOGO WITH IMAGE */
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 22px;
   font-weight: bold;
   color: #f4b400;
 }
+
+.logo img {
+  height: 70px;        /* desktop size */
+  width: auto;
+}
+
+/* MOBILE LOGO SIZE */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: 30px;      /* smaller on mobile */
+  }
+}
+
 
 .nav-links a {
   margin-left: 20px;
