@@ -18,14 +18,24 @@
 <!-- NAVBAR -->
 <nav>
   <div class="logo">MARGH CONSTRUCTIONS</div>
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Enquiry</a>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- COLLAPSIBLE MENU -->
+  <div class="nav-links" id="navMenu">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#contact" onclick="closeMenu()">Enquiry</a>
   </div>
 </nav>
+
 
 <!-- HERO -->
 <section id="home" class="hero">
@@ -128,7 +138,6 @@
 <footer>
   © 2026 MARGH CONSTRUCTIONS. All Rights Reserved.
 </footer>
-
 </body>
 </html>
 
@@ -142,5 +151,20 @@ function openLightbox(img) {
 
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
+}
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  const burger = document.querySelector(".hamburger");
+
+  menu.classList.toggle("open");
+  burger.classList.toggle("active");
+}
+
+function closeMenu() {
+  const menu = document.getElementById("navMenu");
+  const burger = document.querySelector(".hamburger");
+
+  menu.classList.remove("open");
+  burger.classList.remove("active");
 }
 </script>
