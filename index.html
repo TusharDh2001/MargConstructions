@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MARGH CONSTRUCTIONS | Building Trust</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">MARGH CONSTRUCTIONS</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Enquiry</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="overlay">
+    <h1>MARGH CONSTRUCTIONS</h1>
+    <p>
+      Double Story Homes • Architecture • Land Contracts • Complete Construction
+    </p>
+    <a href="#contact" class="btn">Get Free Consultation</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-one">
+  <h2>About Us</h2>
+  <p class="text">
+    MARGH CONSTRUCTIONS is a trusted name in residential construction.
+    We specialize in double-story houses, architectural planning, land contracts,
+    and complete construction solutions — from foundation to finishing.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-one">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">🏠 Double Story House Construction</div>
+    <div class="service">📐 Architectural Design & Planning</div>
+    <div class="service">📄 Land Contract Projects</div>
+    <div class="service">🏗 Complete Residential Construction</div>
+    <div class="service">🛠 Interior & Renovation Works</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section bg-three">
+  <h2>Our Projects</h2>
+  <div class="grid">
+    <img src="assets/1.jpg" alt="Project 1">
+    <img src="assets/2.jpg" alt="Project 2">
+    <img src="assets/3.jpeg" alt="Project 3">
+    <img src="assets/4.jpeg" alt="Project 4">
+    <img src="assets/5.jpeg" alt="Project 5">
+    <img src="assets/6.jpeg" alt="Project 6">
+    <img src="assets/7.jpeg" alt="Project 7">
+  </div>
+</section>
+
+<!-- INTERIORS -->
+<section class="section bg-four">
+  <h2>Interior Works</h2>
+  <div class="grid">
+    <img src="assets/interior2.jpeg" alt="Interior Kitchen">
+    <img src="assets/interior3.jpeg" alt="Interior Work">
+  </div>
+</section>
+
+<!-- Architect Designs-->
+<section class="section bg-four">
+  <h2>Architecture Designs</h2>
+  <div class="grid">
+    <img src="assets/ad1.jpg" alt="ad" class="zoom-img" onclick="openLightbox(this)">
+    <img src="assets/ad2.jpg" alt="ad" class="zoom-img" onclick="openLightbox(this)">
+    <img src="assets/ad3.jpg" alt="ad" class="zoom-img" onclick="openLightbox(this)">
+    <img src="assets/ad4.jpg" alt="ad" class="zoom-img" onclick="openLightbox(this)">
+    <img src="assets/ad5.jpg" alt="ad" class="zoom-img" onclick="openLightbox(this)">
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-five">
+  <h2>Enquiry</h2>
+
+  <p class="text">
+    Click below to share your project details and get a free consultation.
+  </p>
+
+  <!-- BUTTON -->
+  <a
+    href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+    target="_blank"
+    class="btn pulse enquiry-btn"
+  >
+    📋 Open Enquiry Form
+  </a>
+<p> 
+<br>
+<br>
+</p>
+  <!-- CONTACT INFO (ALWAYS BELOW BUTTON) -->
+  <div class="contact-info">
+    <p>📍 Location: Dehradun, Uttarakhand, India</p>
+    <p>📞 Phone: +91 6396476522</p>
+    <p>📧 Email: marghconstructions@gmail.com</p>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 MARGH CONSTRUCTIONS. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
+<script>
+function openLightbox(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightboxImg.src = img.src;
+  lightbox.style.display = "flex";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
